@@ -1,0 +1,44 @@
+<!-- @dsCard group="Foundations" name="Color Tokens" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Archer · Color Tokens</title>
+<style>
+  :root { color-scheme: dark; }
+  body {
+    margin: 0; padding: 40px;
+    background: #282C34;
+    color: #EFEFF1;
+    font-family: "Onest", -apple-system, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1 { font-size: 13px; font-weight: 400; letter-spacing: .12em; text-transform: uppercase; color: #9E9EA0; margin: 0 0 28px; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.07); }
+  .sw { background: #21242b; padding: 16px; }
+  .chip { height: 48px; border: 1px solid rgba(255,255,255,.07); margin-bottom: 12px; }
+  .name { font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 11.5px; font-weight: 500; color: #EFEFF1; }
+  .hex { font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 10px; color: #9E9EA0; margin-top: 2px; }
+  .sec { grid-column: 1 / -1; background: #21242b; padding: 10px 16px; font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: #9E9EA0; }
+</style>
+</head>
+<body>
+  <h1>Color Tokens — Brutalist Chrome</h1>
+  <div class="grid">
+    <div class="sec">Chrome</div>
+    <div class="sw"><div class="chip" style="background:#EFEFF1"></div><div class="name">primary</div><div class="hex">#EFEFF1 · chrome-foreground</div></div>
+    <div class="sw"><div class="chip" style="background:#9E9EA0"></div><div class="name">secondary</div><div class="hex">#9E9EA0 · chrome-muted</div></div>
+    <div class="sw"><div class="chip" style="background:#282C34"></div><div class="name">neutral</div><div class="hex">#282C34 · terminal-surface</div></div>
+    <div class="sw"><div class="chip" style="background:rgba(255,255,255,.07)"></div><div class="name">chrome-hairline</div><div class="hex">rgba(255,255,255,.07)</div></div>
+    <div class="sw"><div class="chip" style="background:rgba(255,255,255,.07)"></div><div class="name">chrome-hover</div><div class="hex">rgba(255,255,255,.07)</div></div>
+    <div class="sw"><div class="chip" style="background:rgba(255,255,255,.15)"></div><div class="name">chrome-active</div><div class="hex">rgba(255,255,255,.15)</div></div>
+    <div class="sec">Activity Status</div>
+    <div class="sw"><div class="chip" style="background:#69B0D6"></div><div class="name">active-running</div><div class="hex">#69B0D6 · cool blue</div></div>
+    <div class="sw"><div class="chip" style="background:#E8B068"></div><div class="name">active-attention</div><div class="hex">#E8B068 · warm amber</div></div>
+    <div class="sw"><div class="chip" style="background:#E86666"></div><div class="name">active-failure</div><div class="hex">#E86666 · warm red</div></div>
+    <div class="sec">Git Diff</div>
+    <div class="sw"><div class="chip" style="background:#73C780"></div><div class="name">git-insertion</div><div class="hex">#73C780 · green</div></div>
+    <div class="sw"><div class="chip" style="background:#E86666"></div><div class="name">git-deletion</div><div class="hex">#E86666 · red</div></div>
+  </div>
+</body>
+</html>

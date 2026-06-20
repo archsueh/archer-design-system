@@ -1,0 +1,30 @@
+<!-- @dsCard group="Components" name="Bracket Button" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Archer · Bracket Button</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin:0; padding:40px; background:#282C34; color:#EFEFF1; font-family:"Onest",-apple-system,system-ui,sans-serif; -webkit-font-smoothing:antialiased; }
+  h1 { font-size:13px; font-weight:400; letter-spacing:.12em; text-transform:uppercase; color:#9E9EA0; margin:0 0 8px; }
+  .sub { font-family:"JetBrains Mono",ui-monospace,monospace; font-size:10px; color:#9E9EA0; margin-bottom:28px; }
+  .states { display:flex; gap:40px; align-items:flex-start; flex-wrap:wrap; }
+  .col { }
+  .tag { font-family:"JetBrains Mono",ui-monospace,monospace; font-size:10px; color:#9E9EA0; margin-bottom:12px; }
+  .btn { display:inline-block; font-family:"JetBrains Mono",ui-monospace,monospace; font-size:11.5px; font-weight:500;
+    color:#EFEFF1; padding:5px 10px; border:1px solid rgba(255,255,255,.07); border-radius:0; }
+  .hover { background:rgba(255,255,255,.07); }
+  .active { background:rgba(255,255,255,.15); transform:scale(0.98); }
+</style>
+</head>
+<body>
+  <h1>Bracket Button</h1>
+  <div class="sub">Plain-text [bracketed] control · JetBrains Mono 11.5/500 · padding 5×10 · 0px corner · 1pt hairline</div>
+  <div class="states">
+    <div class="col"><div class="tag">default</div><span class="btn">[ open in new tab ]</span></div>
+    <div class="col"><div class="tag">hover · chrome-hover</div><span class="btn hover">[ open in new tab ]</span></div>
+    <div class="col"><div class="tag">active · chrome-active + scale .98</div><span class="btn active">[ open in new tab ]</span></div>
+  </div>
+</body>
+</html>

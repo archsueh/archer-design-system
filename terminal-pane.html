@@ -1,0 +1,48 @@
+<!-- @dsCard group="Components" name="Terminal Pane & Tabs" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Archer · Terminal Pane &amp; Tabs</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin:0; padding:40px; background:#21242b; color:#EFEFF1; font-family:"Onest",-apple-system,system-ui,sans-serif; -webkit-font-smoothing:antialiased; }
+  h1 { font-size:13px; font-weight:400; letter-spacing:.12em; text-transform:uppercase; color:#9E9EA0; margin:0 0 24px; }
+  .win { border:1px solid rgba(255,255,255,.07); background:rgba(40,44,52,.72); -webkit-backdrop-filter:blur(20px); backdrop-filter:blur(20px); }
+  .tabs { display:flex; border-bottom:1px solid rgba(255,255,255,.07); }
+  .tab { font-family:"JetBrains Mono",ui-monospace,monospace; font-size:11.5px; padding:8px 14px; color:#9E9EA0; border-right:1px solid rgba(255,255,255,.07); display:flex; align-items:center; gap:8px; }
+  .tab.active { background:rgba(255,255,255,.15); color:#EFEFF1; }
+  .dot { width:8px; height:8px; border-radius:50%; }
+  .body { display:flex; }
+  .side { width:150px; border-right:1px solid rgba(255,255,255,.07); padding:10px 0; }
+  .srow { font-family:"Onest",sans-serif; font-size:13px; padding:6px 14px; color:#9E9EA0; }
+  .srow.sel { background:rgba(255,255,255,.07); color:#EFEFF1; }
+  .term { flex:1; background:#282C34; padding:16px; font-family:"JetBrains Mono",ui-monospace,monospace; font-size:11px; line-height:1.7; color:#EFEFF1; }
+  .muted { color:#9E9EA0; }
+  .g { color:#73C780; }
+</style>
+</head>
+<body>
+  <h1>Terminal Pane &amp; Tabs</h1>
+  <div class="win">
+    <div class="tabs">
+      <div class="tab active"><span class="dot" style="background:#69B0D6"></span>Claude Code</div>
+      <div class="tab"><span class="dot" style="background:#E8B068"></span>检查 archer</div>
+      <div class="tab muted" style="color:#9E9EA0">+</div>
+    </div>
+    <div class="body">
+      <div class="side">
+        <div class="srow sel">Claude</div>
+        <div class="srow">hermes</div>
+        <div class="srow">agy</div>
+      </div>
+      <div class="term">
+        <span class="muted">$</span> swift build &amp;&amp; swift test<br>
+        Build complete! (5.13s)<br>
+        <span class="g">428 tests passed</span><br>
+        <span class="muted">resets 4h26m · 16% / week 2%</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!-- @dsCard group="Foundations" name="Spacing & Grid" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Archer · Spacing &amp; Grid</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin:0; padding:40px; background:#282C34; color:#EFEFF1; font-family:"Onest",-apple-system,system-ui,sans-serif; -webkit-font-smoothing:antialiased; }
+  h1 { font-size:13px; font-weight:400; letter-spacing:.12em; text-transform:uppercase; color:#9E9EA0; margin:0 0 8px; }
+  .sub { font-family:"JetBrains Mono",ui-monospace,monospace; font-size:10px; color:#9E9EA0; margin-bottom:28px; }
+  .row { display:flex; align-items:center; gap:16px; margin-bottom:14px; }
+  .bar { background:#69B0D6; height:16px; }
+  .lab { font-family:"JetBrains Mono",ui-monospace,monospace; font-size:11.5px; font-weight:500; width:170px; color:#EFEFF1; }
+  .grid { margin-top:32px; height:120px; border:1px solid rgba(255,255,255,.07);
+    background-image: repeating-linear-gradient(to right, rgba(255,255,255,.06) 0 1px, transparent 1px 24px),
+                      repeating-linear-gradient(to bottom, rgba(255,255,255,.06) 0 1px, transparent 1px 24px); }
+</style>
+</head>
+<body>
+  <h1>Spacing &amp; Grid</h1>
+  <div class="sub">Strict 4-pixel base grid · space1 → space5</div>
+
+  <div class="row"><div class="lab">space1 · 4px</div><div class="bar" style="width:4px"></div></div>
+  <div class="row"><div class="lab">space2 · 8px</div><div class="bar" style="width:8px"></div></div>
+  <div class="row"><div class="lab">space3 · 12px</div><div class="bar" style="width:12px"></div></div>
+  <div class="row"><div class="lab">space4 · 16px</div><div class="bar" style="width:16px"></div></div>
+  <div class="row"><div class="lab">space5 · 24px</div><div class="bar" style="width:24px"></div></div>
+
+  <div class="grid"></div>
+  <div class="sub" style="margin-top:10px">Chrome breathing defaults favor space3 (12px) and space4 (16px).</div>
+</body>
+</html>
