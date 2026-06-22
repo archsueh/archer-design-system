@@ -1,0 +1,65 @@
+<!-- @dsCard group="Screens" name="Cockpit Views" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Archer · Cockpit Views</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin:0; padding:32px; background:#21242b;
+    font-family:"Onest",-apple-system,system-ui,sans-serif; -webkit-font-smoothing:antialiased; }
+  .win { max-width:760px; margin:0 auto; display:flex; height:340px;
+    background:rgba(40,44,52,0.72); border:1px solid rgba(255,255,255,0.07); }
+  .rail { width:46px; flex:none; border-right:1px solid rgba(255,255,255,0.07);
+    display:flex; flex-direction:column; align-items:center; gap:4px; padding:10px 0; }
+  .ricon { width:30px; height:30px; display:flex; align-items:center; justify-content:center;
+    font-family:"JetBrains Mono",monospace; font-size:13px; color:#9E9EA0;
+    border:1px solid transparent; }
+  .ricon.on { color:#EFEFF1; background:rgba(255,255,255,0.15); border-color:rgba(255,255,255,0.07); }
+  .main { flex:1; display:flex; flex-direction:column; }
+  .switch { display:flex; gap:0; border-bottom:1px solid rgba(255,255,255,0.07); }
+  .tab { font-family:"JetBrains Mono",monospace; font-size:11.5px; color:#9E9EA0;
+    padding:9px 14px; border-right:1px solid rgba(255,255,255,0.07); }
+  .tab.active { color:#EFEFF1; font-weight:700; background:rgba(255,255,255,0.15); }
+  .pane { flex:1; padding:18px; position:relative; overflow:hidden; }
+  .label { font-family:"JetBrains Mono",monospace; font-size:10px; letter-spacing:.12em;
+    text-transform:uppercase; color:#9E9EA0; }
+  .term { font-family:"JetBrains Mono",monospace; font-size:12px; color:#EFEFF1; margin-top:10px; line-height:1.7; }
+  .prompt { color:#69B0D6; }
+  .git-ins { color:#73C780; } .git-del { color:#E86666; }
+  .note { position:absolute; right:14px; bottom:12px; font-family:"JetBrains Mono",monospace;
+    font-size:10px; color:#9E9EA0; }
+  .ghost { position:absolute; inset:0; padding:18px; opacity:0.18;
+    transform:translateX(24px); }
+</style>
+</head>
+<body>
+  <div class="win">
+    <div class="rail">
+      <div class="ricon on">&gt;_</div>
+      <div class="ricon">S</div>
+      <div class="ricon">U</div>
+      <div class="ricon">+</div>
+    </div>
+    <div class="main">
+      <div class="switch">
+        <span class="tab active">Terminal</span>
+        <span class="tab">Skills</span>
+        <span class="tab">Usage</span>
+      </div>
+      <div class="pane">
+        <div class="label">Terminal · main</div>
+        <div class="term">
+          <div><span class="prompt">archer &gt;</span> swift build</div>
+          <div>Build complete! (5.60s)</div>
+          <div><span class="git-ins">+18</span> <span class="git-del">-3</span> DESIGN.md</div>
+        </div>
+        <div class="ghost">
+          <div class="label">Skills</div>
+        </div>
+        <div class="note">slide · fade 0.2s easeInOut</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
